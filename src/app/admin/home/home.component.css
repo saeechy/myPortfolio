@@ -1,0 +1,137 @@
+.home {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 0 12%;
+    background-image: url('/mee.jpg');
+    background-size: 80%;
+    background-position: center;
+    background-repeat: no-repeat;
+    animation: fadeInBg 2s ease-in-out forwards;
+}
+
+.home-content {
+    max-width: 550px;
+    opacity: 0;
+    animation: slideIn 2s ease-out forwards;
+}
+
+.home-content h1{
+    font-size: 55px;
+    font-family: "Russo One", serif;
+    animation: fadeInText 2s ease-in-out forwards;
+}
+
+.home-content h2{
+    font-size: 30px;
+    font-family: "Play", serif;
+    font-weight: 700;
+    color: rgb(255, 0, 98);
+    opacity: 0;
+    animation: fadeInText 3s ease-in-out forwards;
+}
+
+.home-content p{
+    font-size: 20px;
+    opacity: 0;
+    animation: fadeInText 4s ease-in-out forwards;
+}
+
+.home-button{
+    padding: 1% 2.5%;
+    position: absolute;
+    left: 40%;
+    margin: 4% 0 0 0;
+    background-color: rgb(255, 0, 98);
+    border: none;
+    color: white;
+}
+
+
+.home-icons {
+    position: absolute;
+    bottom: 10%;
+    right: 77%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 40px;
+    opacity: 0;
+    animation: slideUp 3s ease-out forwards;
+}
+
+.home-icons a {
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    color: white;
+    font-size: 30px;
+    transition: 0.3s;
+    opacity: 0;
+    animation: fadeInIcons 4s ease-out forwards;
+}
+
+.home-icons a:hover {
+    transform: scale(1.2);
+    color: rgb(0, 204, 255);
+}
+
+@keyframes fadeInBg {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    0% {
+        opacity: 0;
+        transform: translateX(-30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeInText {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes slideUp {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInIcons {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
