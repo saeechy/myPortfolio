@@ -4,12 +4,18 @@ h1 {
     font-size: 45px;
     opacity: 0;
     animation: fadeInText 2s ease-in-out forwards;
+    margin-top: 5%;
 }
 
 h2 {
     text-align: center;
     opacity: 0;
     animation: fadeInText 3s ease-in-out forwards;
+}
+
+.me {
+    text-align: center;
+    font-size: 30px;
 }
 
 .about {
@@ -183,3 +189,58 @@ footer {
         opacity: 1;
     }
 }
+
+/* Mobile Viewport */
+@media screen and (max-width: 768px) {
+    h1 {
+        font-size: 30px;
+        margin-top: 30%;
+}
+    }
+    
+    h2 {
+        font-size: 24px;
+    }
+    
+    .me {
+        font-size: 24px;
+    }
+    
+    .about {
+        margin-top: 50px;
+        padding: 0 5%;
+    }
+    
+    .about-content h2 {
+        font-size: 20px;
+    }
+    
+    .about-table {
+        font-size: 14px;
+    }
+    
+    .about-table td, .about-table th {
+        padding: 10px;
+        font-size: 14px;
+    }
+    
+    .footer-container {
+        flex-direction: column;
+        padding: 0 5%;
+    }
+    
+    .footer-left,
+    .footer-center,
+    .footer-right {
+        text-align: center;
+        margin: 10px 0;
+    }
+    
+    .footer-center .iconsAbout a {
+        font-size: 25px;
+        margin: 0 10px;
+    }
+    
+    .footer-left p, .footer-center p, .footer-right p {
+        font-size: 14px;
+    }

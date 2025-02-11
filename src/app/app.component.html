@@ -1,10 +1,10 @@
 <header class="header" *ngIf="showNavbar">
-  <a routerLink="/home" class="logo">&lt;Jose&gt;</a>
+  <a routerLink="/home" class="logo">&lt;JR&gt;</a>
   <div class="hamburger" (click)="toggleMenu()">&#9776;</div>
   <nav class="navbar" [class.active]="menuOpen">
     <a routerLink="/home" (click)="closeMenu()">Home</a>
     <a routerLink="/about" (click)="closeMenu()">About Me</a>
-    <a routerLink="/works" (click)="closeMenu()">My Works</a>
+    <a routerLink="/works" (click)="closeMenu()">My Projects</a>
     <a routerLink="/contact" (click)="closeMenu()">Contact Me</a>
   </nav>
 </header>
